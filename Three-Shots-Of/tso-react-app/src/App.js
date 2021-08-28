@@ -1,12 +1,18 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+// Import Components
+import Home from "./components/common/Home";
+import NavBar from "./components/common/NavBar";
 
 function App() {
   return (
-    <div className="hero is-link">
-      <div className="hero-body is-link">
-        <p className="title">GG</p>
-      </div>
-    </div>
+    <Router>
+      <NavBar />
+      <Switch>
+        <Route exact path="/" component={Home} />
+      </Switch>
+    </Router>
   );
 }
 
