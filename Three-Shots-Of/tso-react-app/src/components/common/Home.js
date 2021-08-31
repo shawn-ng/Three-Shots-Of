@@ -1,4 +1,5 @@
 import React from "react";
+import ListOfCat from "../sections/ListOfCat";
 
 // A quick start button - Link to somewhere we dunno
 // Instruction
@@ -20,6 +21,7 @@ const Home = () => {
           <button>Mood</button>
           <button>Base</button>
           <button>A-Z</button>
+          <ListOfCat />
         </div>
       </div>
     </section>
