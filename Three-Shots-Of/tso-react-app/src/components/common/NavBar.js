@@ -11,6 +11,15 @@ const NavBar = () => {
         <Link to="/getstarted" className="navbar-item">
           Get Started
         </Link>
+        <Link to="/mood" className="navbar-item">
+          Mood
+        </Link>
+        <Link to="/base" className="navbar-item">
+          Base
+        </Link>
+        <Link to="/a-z" className="navbar-item">
+          A-Z
+        </Link>
       </div>
     </section>
   );

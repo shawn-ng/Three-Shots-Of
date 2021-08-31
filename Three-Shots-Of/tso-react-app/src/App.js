@@ -11,6 +11,9 @@ function App() {
       <NavBar />
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route path="/mood"></Route>
+        <Route path="/base"></Route>
+        <Route path="/a-z"></Route>
       </Switch>
     </Router>
   );
