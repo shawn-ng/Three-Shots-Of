@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/common/Home";
 import NavBar from "./components/common/NavBar";
 import Mood from "./components/common/Mood";
+import Base from "./components/common/Base";
 
 function App() {
   return (
@@ -13,8 +14,8 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/mood" component={Mood}></Route>
-        <Route path="/base"></Route>
-        <Route path="/a-z"></Route>
+        <Route path="/base" component={Base}></Route>
+        <Route path="/atoz"></Route>
       </Switch>
     </Router>
   );

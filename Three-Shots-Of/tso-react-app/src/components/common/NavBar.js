@@ -17,7 +17,7 @@ const NavBar = () => {
         <Link to="/base" className="navbar-item">
           Base
         </Link>
-        <Link to="/a-z" className="navbar-item">
+        <Link to="/atoz" className="navbar-item">
           A-Z
         </Link>
       </div>
