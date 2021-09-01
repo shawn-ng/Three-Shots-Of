@@ -10,14 +10,14 @@ const Option = ({ item }) => {
 
 const ListOfCat = () => {
   const [state, setState] = React.useState({
-    categories: [],
+    categories: null,
   });
 
   const fetchingCategories = async () => {
     try {
       const res = await listofCategories();
       console.log(res.data);
-      setState({ categories: [res.data.drinks] });
+      setState({ categories: res.data.drinks });
       //   console.log(state);
     } catch (err) {
       console.error(err);
@@ -28,17 +28,18 @@ const ListOfCat = () => {
     fetchingCategories();
   }, []);
 
-  console.log(state);
   return (
     <>
       <div className="select">
         <select>
           <option>default</option>
-          {state.categories[0] ? (
+          {/* {state.categories[0] ? (
             state.categories[0].map((category) => <Option item={category} />)
           ) : (
             <option>Loading</option>
-          )}
+          )} */}
+          {state.categories &&
+            state.categories.map((category) => <Option item={category} />)}
         </select>
       </div>
     </>

@@ -7,6 +7,7 @@ import NavBar from "./components/common/NavBar";
 import Mood from "./components/common/Mood";
 import Base from "./components/common/Base";
 import AToZ from "./components/common/AToZ";
+import CocktailPage from "./components/cocktails/CocktailPage";
 
 function App() {
   return (
@@ -14,9 +15,10 @@ function App() {
       <NavBar />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/mood" component={Mood}></Route>
-        <Route path="/base" component={Base}></Route>
-        <Route path="/atoz" component={AToZ}></Route>
+        <Route path="/mood" component={Mood} />
+        <Route path="/base/:drink?" component={Base} />
+        <Route path="/:drink" component={CocktailPage} />
+        <Route path="/atoz" component={AToZ} />
       </Switch>
     </Router>
   );

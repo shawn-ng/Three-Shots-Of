@@ -1,8 +1,5 @@
 import axios from "axios";
 
-// make a function that take multiple endpoints and take multiple input ( or default input )
-// mood function
-
 // Base URL
 const BaseURL = "https://www.thecocktaildb.com/api/json/v1/1/";
 
@@ -23,9 +20,14 @@ export const filterByAlcohol = (Drink) => {
   return axios.get(`${BaseURL}search.php?s=${Drink}`);
 };
 
-//Getting random cocktail
+// Getting random cocktail
 export const randomCocktail = () => {
   return axios.get(`${BaseURL}random.php`);
+};
+
+// Getting cocktail details by id
+export const filterById = (id) => {
+  return axios.get(`${BaseURL}lookup.php?i=${id}`);
 };
 
 /* This is for the option purposes */
