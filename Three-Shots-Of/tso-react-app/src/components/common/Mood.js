@@ -11,6 +11,10 @@ const Mood = () => {
           <p>
             <span>😊😔</span> Select your mood
           </p>
+          <br />
+          <button>Good</button>
+          <button>Neutral</button>
+          <button>Bad</button>
         </div>
       </div>
     </section>

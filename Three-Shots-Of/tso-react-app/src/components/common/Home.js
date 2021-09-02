@@ -19,7 +19,7 @@ const Home = () => {
           <p>Some instructions here</p>
           <br />
           <button>Mood</button>
-          <button>Base</button>
+          <button>Ingredients</button>
           <button>A-Z</button>
           <ListOfCat />
         </div>
