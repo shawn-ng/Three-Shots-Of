@@ -17,7 +17,7 @@ const NavBar = () => {
             </Link>
             <hr className="navbar-divider" />
             <Link to="/base" className="navbar-item">
-              Base
+              Ingredient
             </Link>
             <hr className="navbar-divider" />
             <Link to="/atoz" className="navbar-item">

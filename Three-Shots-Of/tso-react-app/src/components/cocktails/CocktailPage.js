@@ -21,7 +21,7 @@ const CocktailPage = () => {
 
   console.log(state);
   return (
-    <section className="sectio is-fullheight">
+    <section className="section is-fullheight">
       <div className="container">
         {state ? (
           <>

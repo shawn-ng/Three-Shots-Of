@@ -1,20 +1,25 @@
 import React from "react";
+// import { useParams, useHistory } from "react-router";
 
-// A quick start button - Link to somewhere we dunno
-// Instruction
+// import { filterByLetters, filterById } from "../../lib/api";
+// import CocktailCard from "../cocktails/CocktailsCard";
 
 const AToZ = () => {
   return (
-    <section>
-      <div>
-        <div>
-          <p>
-            <span>⌨️</span> Select your letter
-          </p>
-        </div>
+    <>
+      <div className="cocktail-search">
+        <input type="text" placeholder="Search..."></input>
       </div>
-    </section>
+      <div>
+        <span>🍹</span>
+      </div>
+    </>
   );
 };
 
 export default AToZ;
+
+// Search bar - able to search by letter / string
+// Load drink data (image + name)
+// Show drinks
+//Cocktail selection images

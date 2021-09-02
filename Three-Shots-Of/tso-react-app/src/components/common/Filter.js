@@ -1,7 +1,7 @@
 // Here is the filter form
 // mood
 // first letter
-// type of alchol
+// type of alcohol
 // button - give me a random drink
 // submit button
 

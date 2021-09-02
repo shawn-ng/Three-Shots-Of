@@ -16,9 +16,9 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/mood" component={Mood} />
+        <Route path="/atoz" component={AToZ} />
         <Route path="/base/:drink?" component={Base} />
         <Route path="/:drink" component={CocktailPage} />
-        <Route path="/atoz" component={AToZ} />
       </Switch>
     </Router>
   );
