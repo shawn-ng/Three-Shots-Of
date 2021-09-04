@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
@@ -20,8 +20,8 @@ const NavBar = () => {
               Ingredient
             </Link>
             <hr className="navbar-divider" />
-            <Link to="/atoz" className="navbar-item">
-              A-Z
+            <Link to="/cocktailname" className="navbar-item">
+              Cocktails
             </Link>
           </div>
         </div>

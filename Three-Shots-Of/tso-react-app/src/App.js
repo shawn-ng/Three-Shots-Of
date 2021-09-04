@@ -1,16 +1,16 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 // Import Components
-import Home from "./components/common/Home";
-import NavBar from "./components/common/NavBar";
-import Mood from "./components/common/Mood";
-import Base from "./components/common/Base";
-import AToZ from "./components/common/AToZ";
-import CocktailPage from "./components/cocktails/CocktailPage";
-import Happy from "./components/moods/Happy";
-import Sad from "./components/moods/Sad";
-import Neutral from "./components/moods/Neutral";
+import Home from './components/common/Home';
+import NavBar from './components/common/NavBar';
+import Mood from './components/common/Mood';
+import Base from './components/common/Base';
+import CocktailName from './components/common/CocktailName';
+import CocktailPage from './components/cocktails/CocktailPage';
+import Happy from './components/moods/Happy';
+import Sad from './components/moods/Sad';
+import Neutral from './components/moods/Neutral';
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
         <Route path="/mood/sad" component={Sad} />
         <Route path="/mood/neutral" component={Neutral} />
         <Route path="/mood" component={Mood} />
-        <Route path="/atoz" component={AToZ} />
+        <Route path="/cocktailname/:drink?" component={CocktailName} />
         <Route path="/base/:drink?" component={Base} />
         <Route path="/:drink" component={CocktailPage} />
       </Switch>
