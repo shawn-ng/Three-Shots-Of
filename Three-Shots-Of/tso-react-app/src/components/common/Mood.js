@@ -1,5 +1,5 @@
-import React from 'react';
-import { useHistory } from 'react-router';
+import React from "react";
+import { useHistory } from "react-router";
 
 const Mood = () => {
   const history = useHistory();
@@ -24,22 +24,9 @@ const Mood = () => {
           >
             🙂
           </button>
-<<<<<<< HEAD
-          {/* <section>
-      <div>
-        <div>
-          <p>
-            <span>😊😔</span> Select your mood
-          </p>
-          <br />
-          <button>Good</button>
-          <button>Neutral</button>
-          <button>Bad</button> */}
-=======
           <button onClick={handleClick} className="button is-danger" id="sad">
             😞
           </button>
->>>>>>> d244248019e40a179bf3437bfe41620818ce59e9
         </div>
       </div>
     </section>

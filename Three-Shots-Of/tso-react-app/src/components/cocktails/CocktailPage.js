@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { filterByAlcohol } from "../../lib/api";
+import { ingredientsArray } from "../../lib/stringDict";
 
 const CocktailPage = () => {
   const { drink } = useParams();
@@ -19,7 +20,6 @@ const CocktailPage = () => {
     fetchingSpecificDrink();
   }, []);
 
-  console.log(state);
   return (
     <section className="section is-fullheight">
       <div className="container">
@@ -37,6 +37,15 @@ const CocktailPage = () => {
                 <div>
                   <p className="is-size-4">Ingredients</p>
                   <br />
+                  <ul>
+                    {ingredientsArray.map((key) => {
+                      return (
+                        <li>
+                          <p className="mt-3">{state[key]}</p>
+                        </li>
+                      );
+                    })}
+                  </ul>
                 </div>
                 <hr />
                 <div>
