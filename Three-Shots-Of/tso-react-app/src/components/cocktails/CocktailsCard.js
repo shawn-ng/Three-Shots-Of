@@ -2,7 +2,7 @@ import React from "react";
 
 const CocktailCard = ({ strDrink, strDrinkThumb, idDrink }) => {
   return (
-    <div className="column is-one-quarter">
+    <div className="column is-one-quarter" key={idDrink}>
       <div className="card">
         <a href={`/${strDrink}`}>
           <div className="card-image">

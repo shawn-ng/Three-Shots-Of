@@ -18,7 +18,6 @@ const ListOfCat = () => {
       const res = await listofCategories();
       console.log(res.data);
       setState({ categories: res.data.drinks });
-      //   console.log(state);
     } catch (err) {
       console.error(err);
     }
