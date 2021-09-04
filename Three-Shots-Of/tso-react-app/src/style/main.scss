@@ -1,1 +1,15 @@
-@import "~bulma/bulma.sass";
+@import '~bulma/bulma.sass';
+.bg-img {
+  background-image: url(https://media.gq-magazine.co.uk/photos/5d13a9ab2881cc0ea90a9762/master/w_1920,h_1280,c_limit/01-gq-22mar19_b.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.8;
+  image-rendering: optimizeQuality;
+  background-color: #999;
+}
+
+.shadow {
+  text-shadow: 4px 4px 6px rgb(0, 0, 0);
+}

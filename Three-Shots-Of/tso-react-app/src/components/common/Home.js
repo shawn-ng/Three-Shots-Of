@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef } from 'react';
 
 const Home = () => {
   const instructions = useRef(null);
@@ -8,17 +8,19 @@ const Home = () => {
 
     const ref = instructions;
 
-    ref.current.scrollIntoView({ behavior: "smooth" });
+    ref.current.scrollIntoView({ behavior: 'smooth' });
   };
   return (
     <>
-      <section className="hero is-fullheight-with-navbar ">
-        <div className="hero-body">
+      <section className="hero is-fullheight-with-navbar bg-img">
+        <div className="hero-body hero-background">
           <div className="container">
-            <p className="title has-text-centered">
-              <span>🍸</span> WELCOME TO 3 SHOTS OF <span>🍸</span>
-            </p>
-            <div className="is-flex is-justify-content-center">
+            <div className="">
+              <p className="title has-text-centered has-text-light shadow is-size-1">
+                <span>🍸</span> WELCOME TO 3 SHOTS OF <span>🍸</span>
+              </p>
+            </div>
+            <div className="is-flex is-justify-content-center mt-4">
               <button className="button" onClick={handleClick}>
                 Instructions
               </button>
