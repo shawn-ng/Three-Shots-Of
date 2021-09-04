@@ -1,8 +1,8 @@
-import React from 'react';
-import { useParams, useHistory } from 'react-router';
+import React from "react";
+import { useParams, useHistory } from "react-router";
 
-import { filterByAlcohol } from '../../lib/api';
-import CocktailCard from '../cocktails/CocktailsCard';
+import { filterByAlcohol } from "../../lib/api";
+import CocktailCard from "../cocktails/CocktailsCard";
 
 const Links = ({ array }) => {
   return array.map((item) => {
@@ -17,11 +17,11 @@ const Links = ({ array }) => {
 };
 
 const CocktailName = () => {
-  const { drink = 'Mojito' } = useParams();
+  const { drink = "Mojito" } = useParams();
   const history = useHistory();
 
   const [state, setState] = React.useState();
-  const [search, setSearch] = React.useState('');
+  const [search, setSearch] = React.useState("");
 
   const fetchingListofCocktails = async () => {
     try {
@@ -44,7 +44,6 @@ const CocktailName = () => {
 
   React.useEffect(() => {
     fetchingListofCocktails();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   console.log(state);
 
