@@ -11,6 +11,7 @@ const Mood = () => {
   };
 
   return (
+<<<<<<< HEAD
     <section className="hero is-fullheight-with-navbar">
       <div className="hero-body is-flex is-justify-content-center">
         <div className="buttons are-medium box">
@@ -27,6 +28,18 @@ const Mood = () => {
           >
             🙂
           </button>
+=======
+    <section>
+      <div>
+        <div>
+          <p>
+            <span>😊😔</span> Select your mood
+          </p>
+          <br />
+          <button>Good</button>
+          <button>Neutral</button>
+          <button>Bad</button>
+>>>>>>> 03d4662232b6aa4ef6522870ed55a510bc11c047
         </div>
       </div>
     </section>

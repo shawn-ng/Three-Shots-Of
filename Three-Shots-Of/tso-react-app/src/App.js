@@ -22,9 +22,9 @@ function App() {
         <Route path="/mood/sad" component={Sad} />
         <Route path="/mood/neutral" component={Neutral} />
         <Route path="/mood" component={Mood} />
+        <Route path="/atoz" component={AToZ} />
         <Route path="/base/:drink?" component={Base} />
         <Route path="/:drink" component={CocktailPage} />
-        <Route path="/atoz" component={AToZ} />
       </Switch>
     </Router>
   );

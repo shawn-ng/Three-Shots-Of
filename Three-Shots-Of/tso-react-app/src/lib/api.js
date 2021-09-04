@@ -5,9 +5,9 @@ const BaseURL = "https://www.thecocktaildb.com/api/json/v1/1/";
 
 /* This is for the filtering api */
 
-// Getting cocktail drinks by certain base ingridient e.g gin
-export const filterByIngredient = (Ingridient) => {
-  return axios.get(`${BaseURL}filter.php?i=${Ingridient}`);
+// Getting cocktail drinks by certain base ingredient e.g gin
+export const filterByIngredient = (Ingredient) => {
+  return axios.get(`${BaseURL}filter.php?i=${Ingredient}`);
 };
 
 // Getting cocktail drinks by letters
