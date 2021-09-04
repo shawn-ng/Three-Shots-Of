@@ -1,18 +1,17 @@
-import React from "react";
+import React from 'react';
 // import { useParams, useHistory } from "react-router";
 
-// import { filterByLetters, filterById } from "../../lib/api";
+// import { filterByLetters } from "../../lib/api";
 // import CocktailCard from "../cocktails/CocktailsCard";
 
 const AToZ = () => {
   return (
     <>
-      <div className="cocktail-search">
-        <input type="text" placeholder="Search..."></input>
-      </div>
-      <div>
-        <span>🍹</span>
-      </div>
+      {/* <div className="cocktail-search">
+      <h3> Browse By Letter</h3>
+      <h2>
+      <span><a href='/browse.php?b=a'/>A</a> | </span>
+      </h2> */}
     </>
   );
 };
