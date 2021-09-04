@@ -1,9 +1,9 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <section className="navbar is-link">
+    <section className="navbar is-dark">
       <div className="navbar-brand">
         <Link to="/" className="navbar-item">
           Home

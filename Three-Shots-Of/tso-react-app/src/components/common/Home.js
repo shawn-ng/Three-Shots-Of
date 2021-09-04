@@ -20,16 +20,16 @@ const Home = () => {
             </p>
             <div className="is-flex is-justify-content-center">
               <button className="button" onClick={handleClick}>
-                See More
+                Instructions
               </button>
             </div>
           </div>
         </div>
       </section>
-      <section className="hero is-fullheight is-warning" ref={instructions}>
+      <section className="hero is-fullheight is-dark" ref={instructions}>
         <div className="hero-body">
           <div className="container box">
-            <p className="title has-text-centered">
+            <p className="title has-text-centered has-text-black">
               <span>Instructions</span>
             </p>
             <br />
