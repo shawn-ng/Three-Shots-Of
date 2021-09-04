@@ -1,6 +1,5 @@
 import React from "react";
 
-import { DrinksonMood } from "../../lib/moodDict";
 import { filterByAlcohol } from "../../lib/api";
 import CocktailCard from "../cocktails/CocktailsCard";
 
@@ -59,11 +58,6 @@ const Happy = () => {
       ...state.negroni,
     ];
     console.log(newArray.sort(() => 0.5 - Math.random()));
-
-    // const start = Math.floor(Math.random() * 9);
-    // const end = Math.floor(Math.random() * 12);
-
-    // if (Math.abs(start-end) > 3)
 
     return (
       <section className="section is-fullheight-with-navbar">
