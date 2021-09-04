@@ -84,16 +84,17 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ​
 
 - Overthinking the UI: I wanted the page to be as easy to use as possible, but also show all of the information necessary without having to go to 50 different places.
-  - I think that we ended up in a good place, as the 'Get Started' dropdown is intuitive, and the search bar on the 'Cocktails' page searches by full/partial cocktail name & cocktail containing the letter that is entered (if only a string of 1 or a few letters is entered)
+- I think that we ended up in a good place, as the 'Get Started' dropdown is intuitive, and the search bar on the 'Cocktails' page searches by full/partial cocktail name & cocktail containing the letter that is entered (if only a string of 1 or a few letters is entered)
 - Getting the menu to show on the 'Cocktails' page. The logic was almost identical to 'Base', however, the list was just not showing up
-  - After bug fixing with Heng it was due the route extention needing to be added + missing props on one line
-    ​
+- After bug fixing with Heng it was due the route extention needing to be added + missing props on one line
+  ​
 
 ## Heng Hurdles:
 
 ​
 
-- Write here
+- API responses aren't the best as they are not build to cather the needs of our app.
+- Design of the website
 
 ## Learn More
 
