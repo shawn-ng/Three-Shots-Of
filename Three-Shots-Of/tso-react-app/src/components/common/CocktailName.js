@@ -21,22 +21,12 @@ const CocktailName = () => {
   const history = useHistory();
 
   const [state, setState] = React.useState();
-  const [drinks, setDrinks] = React.useState();
   const [search, setSearch] = React.useState('');
 
   const fetchingListofCocktails = async () => {
     try {
-      const res = await filterByAlcohol();
-      setState(res.data.drinks);
-    } catch (err) {
-      console.error(err);
-    }
-  };
-
-  const fetchingfilterbyCocktail = async () => {
-    try {
       const res = await filterByAlcohol(drink);
-      setDrinks(res.data.drinks);
+      setState(res.data.drinks);
     } catch (err) {
       console.error(err);
     }
@@ -54,8 +44,8 @@ const CocktailName = () => {
 
   React.useEffect(() => {
     fetchingListofCocktails();
-    fetchingfilterbyCocktail();
   }, []);
+  console.log(state);
 
   return (
     <section className="section">
@@ -86,8 +76,8 @@ const CocktailName = () => {
           </div>
         </div>
         <div className="columns is-multiline ml-5">
-          {drinks
-            ? drinks.map((drink) => {
+          {state
+            ? state.map((drink) => {
                 return (
                   <CocktailCard
                     strDrink={drink.strDrink}
