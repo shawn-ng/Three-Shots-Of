@@ -1,6 +1,7 @@
 import React from "react";
 import { randomCocktail } from "../../lib/api";
 import Modal from "react-modal";
+import { ingredientsArray } from "../../lib/stringDict";
 
 const Neutral = () => {
   const [state, setState] = React.useState();
@@ -66,6 +67,15 @@ const Neutral = () => {
                 <div>
                   <p className="is-size-4">Ingredients</p>
                   <br />
+                  <ul>
+                    {ingredientsArray.map((key) => {
+                      return (
+                        <li>
+                          <p className="mt-3">{state[key]}</p>
+                        </li>
+                      );
+                    })}
+                  </ul>
                 </div>
                 <hr />
                 <div>
