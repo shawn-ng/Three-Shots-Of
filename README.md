@@ -1,13 +1,13 @@
 # Three-Shots-Of
 
-​
+​Three-Shots-Of is a react web app for people to search for cocktails that they wish to have and knowing the cocktails information.
 
 ## Install instructions:
 
 ​
 
 - Open the 'TSO' folder up through your terminal
-  ​
+- Clone the repo
 - control + tilde to open terminal inside of VS Code
 - Type 'Yarn install'
 - Once installed type 'Yarn start' to load the app inside of your browser
@@ -38,9 +38,12 @@
 ![Image of Letter Page Wireframe](https://i.imgur.com/kPK6xmQ.png)
 ​
 
-## Lillian Hurdles:
+## Website Looks:
 
-​
+![Image of Home Page](assets/Home Page.png)
+![Image of Cocktail Page](assets/Cocktail Page.png)
+
+## Lillian Hurdles:
 
 - Overthinking the UI: I wanted the page to be as easy to use as possible, but also show all of the information necessary without having to go to 50 different places.
 - I think that we ended up in a good place, as the 'Get Started' dropdown is intuitive, and the search bar on the 'Cocktails' page searches by full/partial cocktail name & cocktail containing the letter that is entered (if only a string of 1 or a few letters is entered)
@@ -50,8 +53,10 @@
 
 ## Heng Hurdles:
 
-​
-
 - API responses aren't the best as they are not build to cather the needs of our app.
 - Design of the website
+- Finding out what is the most agile way to work with partner ( git-branch )
 
+## Future Developement:
+
+- Deploy into actual website and allow access for users.
