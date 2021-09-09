@@ -31,17 +31,16 @@
 
 ## Original Wireframe:
 
-​
 ![Image of Home Page Wireframe](https://i.imgur.com/hidwVQ4.png)
 ![Image of Mood Page Wireframe](https://i.imgur.com/1nlF6IA.png)
 ![Image of Ingredient Page Wireframe](https://i.imgur.com/tpcxQOO.png)
 ![Image of Letter Page Wireframe](https://i.imgur.com/kPK6xmQ.png)
 ​
 
-## Website Looks:
+## End Result:
 
-![Image of Home Page](assets/Home Page.png)
-![Image of Cocktail Page](assets/Cocktail Page.png)
+![Image of Home Page](assets/Home_Page_new.png)
+![Image of Cocktail Page](assets/Cocktail_Page_new.png)
 
 ## Lillian Hurdles:
 
